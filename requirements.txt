@@ -1,4 +1,7 @@
-fastapi
-uvicorn[standard]
-httpx
-qbittorrent-api
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+httpx==0.28.1
+qbittorrent-api==2026.10.0
+beautifulsoup4==4.15.0
+pydantic==2.13.5
+tzdata==2026.5; sys_platform == "win32"

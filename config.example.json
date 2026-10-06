@@ -1,0 +1,83 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 5000
+  },
+  "qbittorrent": {
+    "host": "localhost",
+    "port": 8080,
+    "username": "admin",
+    "password": "CHANGE_ME"
+  },
+  "download": {
+    "save_path": "D:\\Downloads",
+    "sync_interval_seconds": 10,
+    "webui_url": "http://localhost:8080",
+    "temp_root": "D:\\Downloads\\_incomplete",
+    "complete_root": "D:\\Downloads",
+    "delivery_interval_seconds": 10,
+    "path_mappings": []
+  },
+  "engines": {
+    "thepiratebay": {
+      "enabled": true,
+      "weight": 1.1,
+      "timeout": 8
+    },
+    "bitsearch": {
+      "enabled": true,
+      "weight": 1.2,
+      "timeout": 10
+    },
+    "solidtorrents": {
+      "enabled": true,
+      "weight": 1,
+      "timeout": 8
+    },
+    "mikan": {
+      "enabled": true,
+      "weight": 1.1,
+      "timeout": 8
+    }
+  },
+  "generic_sites": [
+    {
+      "id": "dmhy",
+      "name": "动漫花园（模板）",
+      "enabled": false,
+      "search_url": "https://share.dmhy.org/topics/list?keyword={query}",
+      "result_selector": "#topic_list tbody tr",
+      "title_selector": ".title a[href*='/topics/view/']",
+      "allow_hashes": false,
+      "weight": 1,
+      "timeout": 8
+    },
+    {
+      "id": "custom_forum",
+      "name": "自定义中文论坛（模板）",
+      "enabled": false,
+      "search_url": "https://example.com/search?q={query}",
+      "result_selector": "article",
+      "title_selector": "h2",
+      "detail_link_selector": "h2 a",
+      "max_detail_pages": 5,
+      "allow_hashes": true,
+      "weight": 1,
+      "timeout": 8
+    }
+  ],
+  "batch": {
+    "max_lines": 1000,
+    "concurrency": 3,
+    "max_pending": 2000
+  },
+  "display": {
+    "timezone": "Asia/Tokyo"
+  },
+  "search": {
+    "timeout_seconds": 12,
+    "max_results": 40,
+    "per_source_concurrency": 2,
+    "max_results_per_engine": 10
+  }
+}

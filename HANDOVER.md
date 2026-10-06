@@ -1,5 +1,7 @@
 # 🎬 Movie Downloader Assist - 项目交接文档
 
+> 历史归档：下文记录旧版单次搜索界面，不描述当前批次工作台，部分接口、版本和许可表述已过时。当前安装与使用以 [README.md](README.md) 为准，插件开发以 [search_engine/AGENTS.md](search_engine/AGENTS.md) 为准。此文件不纳入发布包。
+
 ## 1. 项目概述
 这是一个为离线下载机量身定制的"轻量级 AI 下载控制台"。
 项目避开了日本宽带运营商（ISP）对主流盗版种子站的 DNS 劫持和 SNI 阻断，通过集成抗封锁的 API，实现了**全本地化、支持中英双语检索、一键推送到 qBittorrent** 的顺畅体验。
