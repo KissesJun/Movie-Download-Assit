@@ -1,14 +1,27 @@
 ﻿<!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="fluent">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>影视下载助手 · 批次工作台</title>
-<link rel="stylesheet" href="/workbench.css?v=20261006.6">
-<script src="/workbench.js?v=20261006.6" defer></script>
+<script src="/themes.js?v=20261006.7"></script>
+<link rel="stylesheet" href="/workbench.css?v=20261006.7">
+<link rel="stylesheet" href="/themes.css?v=20261006.7">
+<script src="/workbench.js?v=20261006.7" defer></script>
 </head>
 <body>
+<header class="app-header">
+  <span class="app-brand"><span class="app-mark"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></svg></span>影视下载助手</span>
+  <span class="app-subtitle">批次下载工作台</span><span class="spacer"></span>
+  <details class="skin-picker" id="skinPicker">
+    <summary class="skin-toggle" id="skinToggle" aria-label="皮肤，当前为 Fluent"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 2 4-2 6 4-3 5-3-1v10H8V11l-3 1-3-5 6-4Z"/></svg><span>皮肤</span><span class="skin-name" id="skinLabel">Fluent</span></summary>
+    <div class="skin-menu" role="group" aria-label="选择页面皮肤"><p class="skin-menu-title">选择皮肤 · 共用当前批次和下载</p>
+      <button type="button" class="skin-option" data-skin="fluent" aria-label="Fluent，现代 Windows 皮肤" aria-pressed="true"><span class="skin-swatch"></span><span><strong>Fluent</strong><small>现代 Windows · 轻圆角 · 紧凑列表</small></span><span class="skin-check" aria-hidden="true">✓</span></button>
+      <button type="button" class="skin-option" data-skin="win98" aria-label="Win98 经典皮肤" aria-pressed="false"><span class="skin-swatch classic"></span><span><strong>Win98 经典</strong><small>浅灰控件 · 深蓝标题栏 · 方形按钮</small></span><span class="skin-check" aria-hidden="true" hidden>✓</span></button>
+    </div>
+  </details>
+</header>
 <section class="window batch-input" id="batchInput">
-  <h1 class="titlebar">影视下载助手 · 批量解析<span class="spacer"></span><span>Win98 下载工作台</span></h1>
+  <h1 class="titlebar">批量解析<span class="spacer"></span><span>保存列表 → 检索 → 添加下载</span></h1>
   <div class="parse-grid">
     <textarea id="keywords" aria-label="批量关键词" placeholder="一行一个关键词。解析保存列表，检索查找资源，点击资源名称加入下载。"></textarea>
     <div class="parse-actions"><button id="parseNew">解析为新列表</button><button id="appendCurrent" disabled>追加到当前列表</button><span class="muted" id="appendTarget">当前：未选择方案</span><span class="muted">空行跳过；重复行保留</span></div>

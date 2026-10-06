@@ -8,6 +8,8 @@ $releaseFiles = @(
     'run.bat', 'setup.bat', 'launch.py', 'main.py', 'batch.py',
     'storage.py', 'downloads.py', 'delivery.py', 'report.py',
     'static/index.html', 'static/workbench.css', 'static/workbench.js',
+    'static/themes.css', 'static/themes.js',
+    'tests/test_themes.js',
     'search_engine/AGENTS.md', 'scripts/package_release.ps1'
 )
 foreach ($releaseFolder in @('search_engine', 'tests')) {
