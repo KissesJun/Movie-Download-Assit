@@ -1,6 +1,7 @@
 ﻿# Movie Downloader Assist · 影视下载助手
 
 轻量 Python/FastAPI 应用：聚合搜索种子资源，提取与校验磁力链接，按哈希去重并评分，通过 qBittorrent WebUI API 添加下载任务。前端使用原生 HTML/CSS/JavaScript，无构建步骤。
+<img width="1908" height="856" alt="image" src="https://github.com/user-attachments/assets/1074b2bf-6d96-4eb0-93ea-8e12cf33f248" />
 
 ## Windows 快速开始
 
